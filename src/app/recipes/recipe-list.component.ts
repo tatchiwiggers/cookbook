@@ -7,12 +7,13 @@ import recipesJson from './recipes.json';
     templateUrl: './recipe-list.component.html'
 })
 export class RecipeListComponent {
+
+
     pageTitle: string = 'Recipes List'
 
     imageWidth = 70;
     imageMargin = 2;
     showImage: boolean = false;
-    // listFilter: string = 'cart';
     
     private _listFilter: string = '';
     get listFilter(): string {
@@ -38,8 +39,8 @@ export class RecipeListComponent {
     }
         
     ngOnInit(): void {
-        // console.log("I'm on Init")
-        this.listFilter = ''
+        this.listFilter = '';
     }
+    
 }
 
